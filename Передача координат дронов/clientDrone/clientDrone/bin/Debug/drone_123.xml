@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Drone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="123">
+  <Координата_x0020_X>34.618</Координата_x0020_X>
+  <Координата_x0020_Y>114.2053</Координата_x0020_Y>
+  <Скорость>60</Скорость>
+</Drone>
