@@ -1,0 +1,16 @@
+C:\Users\подьзователь\source\repos\serverDrone\serverDrone\bin\Debug\serverDrone.exe.config
+C:\Users\подьзователь\source\repos\serverDrone\serverDrone\bin\Debug\serverDrone.exe
+C:\Users\подьзователь\source\repos\serverDrone\serverDrone\bin\Debug\serverDrone.pdb
+C:\Users\подьзователь\source\repos\serverDrone\serverDrone\obj\Debug\serverDrone.csproj.AssemblyReference.cache
+C:\Users\подьзователь\source\repos\serverDrone\serverDrone\obj\Debug\serverDrone.csproj.SuggestedBindingRedirects.cache
+C:\Users\подьзователь\source\repos\serverDrone\serverDrone\obj\Debug\serverDrone.csproj.CoreCompileInputs.cache
+C:\Users\подьзователь\source\repos\serverDrone\serverDrone\obj\Debug\serverDrone.exe
+C:\Users\подьзователь\source\repos\serverDrone\serverDrone\obj\Debug\serverDrone.pdb
+D:\практика\Передача координат дронов\serverDrone\serverDrone\bin\Debug\serverDrone.exe.config
+D:\практика\Передача координат дронов\serverDrone\serverDrone\bin\Debug\serverDrone.exe
+D:\практика\Передача координат дронов\serverDrone\serverDrone\bin\Debug\serverDrone.pdb
+D:\практика\Передача координат дронов\serverDrone\serverDrone\obj\Debug\serverDrone.csproj.AssemblyReference.cache
+D:\практика\Передача координат дронов\serverDrone\serverDrone\obj\Debug\serverDrone.csproj.SuggestedBindingRedirects.cache
+D:\практика\Передача координат дронов\serverDrone\serverDrone\obj\Debug\serverDrone.csproj.CoreCompileInputs.cache
+D:\практика\Передача координат дронов\serverDrone\serverDrone\obj\Debug\serverDrone.exe
+D:\практика\Передача координат дронов\serverDrone\serverDrone\obj\Debug\serverDrone.pdb
