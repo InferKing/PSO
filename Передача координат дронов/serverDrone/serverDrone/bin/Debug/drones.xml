@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<DroneList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Drones>
+    <Drone>
+      <Name>123</Name>
+      <PositionX>34.5313</PositionX>
+      <PositionY>114.8771</PositionY>
+      <Speed>0</Speed>
+    </Drone>
+  </Drones>
+  <Leader>
+    <Name>Дрон лидер</Name>
+    <PositionX>39.1713</PositionX>
+    <PositionY>77.5074</PositionY>
+    <Speed>60</Speed>
+  </Leader>
+</DroneList>
