@@ -1,0 +1,44 @@
+def avoid_collisions(drone_pos, drone_vel, obstacles_pos, obstacles_vel, time_horizon):
+    # drone_pos - позиция нашего дрона (x, y, z)
+    # drone_vel - скорость нашего дрона (vx, vy, vz)
+    # obstacles_pos - список позиций других дронов (векторы, x, y, z)
+    # obstacles_vel - список скоростей других дронов (векторы, vx, vy, vz)
+    # time_horizon - предполагаемый горизонт времени, в течение которого могут произойти столкновения
+    
+    # Найдем соответствия между позициями и скоростями дронов для удобства дальнейшей работы
+    drones = zip(drone_pos, drone_vel)
+    obstacles = zip(obstacles_pos, obstacles_vel)
+    
+    # Пройдемся по всем другим дронам и проверим, есть ли угроза столкновения
+    for obstacle_pos, obstacle_vel in obstacles:
+        # Рассчитаем, на каком расстоянии находится другой дрон от нас, с учетом его скорости и
+        # того, что он может продолжить движение в течение определенного горизонта времени:
+        relative_pos = drone_pos - obstacle_pos
+        relative_vel = drone_vel - obstacle_vel
+
+    # linalg.norm(...) = кв. корень из суммы квадратов координат вектора <=> sqrt(x^2+y^2+z^2)
+        time_to_collision = np.linalg.norm(relative_pos) / np.linalg.norm(relative_vel)
+        if time_to_collision < time_horizon:
+            # Опасно - нужно обойти препятствие
+            # Найдем наилучший маневр:
+	    # вектор / норму = вектор длины 1, указывающий направление
+            direction = relative_pos / np.linalg.norm(relative_pos)
+            lateral_dir = np.array([direction[1], -direction[0], direction[2]]) # перпендикуляр к направлению на дрон ([y, -x, z])
+            safe_dir = direction
+            for d in [direction, lateral_dir, -lateral_dir]: # [x, y, z], [y, -x, z], [-y, x, -z]
+                # Попытаемся сместиться в одном из направлений
+                candidate = direction + d
+                candidate_pos = drone_pos + candidate * drone_vel * time_to_collision
+                candidate_dists = np.linalg.norm(candidate_pos - o_pos) for o_pos, _ in drones
+                if all(d > buffer_dist for d in candidate_dists):
+                    # Движение в этом направлении не столкнется с другими дронами, выбираем его
+                    safe_dir = candidate
+                    break
+            # Управляем нашим дроном в безопасном направлении:
+            drone_vel = speed_limit * safe_dir
+    
+    return drone_vel
+
+
+
+
