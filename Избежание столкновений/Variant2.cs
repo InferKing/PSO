@@ -11,8 +11,8 @@ namespace cstest
         const int COLLISION_THRESHOLD = 10, COLLISION_ANGLE_THRESHOLD = 10;
 
         // Checks for collisions with other drones and changes direction if necessary
-        public void CheckCollision(List<Drone> drones)
-        {
+        public void CheckCollision(List<Drone> drones) // здесь есть функции .magnitude, .Angle - они по идее есть, если мы в Юнити уже прогаем (нужен using UnityEngine)
+        {                                              // в нижнем варианте (namespace second) перегрузил Vector3 и написал эти функции вручную
             foreach (Drone otherDrone in drones)
             {
                 if (otherDrone == this) { continue; } // Skip self
